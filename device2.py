@@ -5,7 +5,7 @@ import base64
 import os
 
 HOST = '10.175.115.228'
-PORT = 9876
+PORT = 65432
 KEY = b'8bytekey'  # harus sama dengan client
 
 def encrypt_message(message, mode, iv=None):
@@ -80,4 +80,5 @@ def main():
                     print(f"   🧩 IV         : {base64.b64encode(iv_send).decode('utf-8')}")
 
 if __name__ == "__main__":
+
     main()
